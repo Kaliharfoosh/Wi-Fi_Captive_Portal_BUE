@@ -17,7 +17,7 @@ The purpose of this project is to understand how captive portals, local web serv
 
 ## Hardware Requirements
 
-- ESP8266 or ESP32 board
+- ESP32 board
 - USB cable
 - Arduino IDE
 - Required Arduino libraries depending on the board and code used
@@ -25,7 +25,10 @@ The purpose of this project is to understand how captive portals, local web serv
 ## Software Requirements
 
 - Arduino IDE
-- ESP8266/ESP32 board package installed
+- ESP32 board package installed
+- ESP32 USB-to-serial driver installed, depending on your board:
+    - CP2102 / CP2104: Silicon Labs CP210x USB to UART Driver
+    - CH340 / CH341: WCH CH340 Driver
 - Git / GitHub for version control
 
 ## How to Use
