@@ -5,7 +5,9 @@
 This project is an educational Arduino/ESP Wi-Fi captive portal demo.  
 It creates a local Wi-Fi access point and serves a simple web page to connected users.
 
-The purpose of this project is to understand how captive portals, local web servers, DNS redirection, and embedded Wi-Fi devices work.
+When the user submits a username and password to the web page, the values are displayed in the Arduino IDE Serial Monitor. This is included to demonstrate how insecure or fake captive portals can capture submitted form data.
+
+The purpose of this project is to understand how captive portals, local web servers, DNS redirection, embedded Wi-Fi devices, and Wi-Fi security awareness work.
 
 ## Features
 
@@ -19,8 +21,6 @@ The purpose of this project is to understand how captive portals, local web serv
 
 - ESP32 board
 - USB cable
-- Arduino IDE
-- Required Arduino libraries depending on the board and code used
 
 ## Software Requirements
 
@@ -37,9 +37,12 @@ The purpose of this project is to understand how captive portals, local web serv
 2. Open the `.ino` file in Arduino IDE.
 3. Select the correct board from **Tools → Board**.
 4. Select the correct port from **Tools → Port**.
-5. Upload the sketch to the board.
-6. Connect to the Wi-Fi network created by the device.
-7. Open a browser to test the captive portal page.
+5. Open the Serial Monitor in Arduino IDE.
+6. Upload the sketch to the board.
+7. Connect to the Wi-Fi network created by the device.
+8. Open a browser to test the captive portal page.
+9. Submit a test username and test password on the page.
+10. Check the Arduino IDE Serial Monitor to confirm that the submitted test values appear.
 
 ## Disclaimer
 
